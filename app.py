@@ -13,7 +13,6 @@ app = FastAPI()
 class AnalyzeRequest(BaseModel):
     url: str
     video_id: int
-    title: str
 
 @app.post("/start-analysis/")
 def start_analysis(req: AnalyzeRequest):
@@ -23,7 +22,6 @@ def start_analysis(req: AnalyzeRequest):
     # Django 백엔드로 결과 전송
     payload = {
         "video_id": req.video_id,
-        "title": req.title,
         "url": req.url,
         "result": result
     }
