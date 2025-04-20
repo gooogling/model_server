@@ -1,9 +1,9 @@
+import os
+import requests
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from pydantic import BaseModel
 from service.pipeline import run_pipeline
-from dotenv import load_dotenv
-import os
-import requests
 
 load_dotenv()
 DJANGO_RESULT_API = os.getenv("DJANGO_RESULT_API")
