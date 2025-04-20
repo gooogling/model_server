@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 **/gaboljido_yolo.torchscript
+ner_output/model.safetensors
+
 
 
 # C extensions
